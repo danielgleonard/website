@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <title>Penis Percentile Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="How do you measure up?" />
+    <meta name="keywords" content="penis, dick, cock, how big, average, size" />
+    <meta name="author" content="Dan Leonard" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@danleonard4" />
+    <meta name="twitter:title" content="Penis Percentile Calculator" />
+    <meta name="twitter:description" content="How do you measure up?" />
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Twemoji_1f4cf.svg/200px-Twemoji_1f4cf.svg.png" />
+    <meta name="twitter:image:alt" content="Drawing of a ruler" />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Penis Percentile Calculator" />
+    <meta property="og:description" content="How do you measure up?" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/53/Soft_ruler.jpg" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- 🍆 -->
+    <script language="javascript">
+        function calculatePercentile() {
+            // Retrieve variables
+            var input = parseFloat(document.getElementById("calculator-length").value);
+            var mean = parseFloat(document.getElementById("distribution-mean").value);
+            var stdev = parseFloat(document.getElementById("distribution-stdev").value);
+            var percentilePrint = document.getElementById("percentile");
+            var longestPenis = 34;
+            var percentile = 0;
+            var z = 0;
+
+            // Fuck users
+            if (isNaN(input) || isNaN(mean) || isNaN(stdev)) {
+                alert("Enter numbers only");
+                return;
+            }
+
+            // Calculate
+            z = (mean - input) / stdev;
+            percentile = (1 - Math.round(zProb(z) * 10000) / 10000) * 100;
+
+            // Print
+            if (percentile == 100 && input < longestPenis) {
+                document.getElementById("disclaimer").hidden = false;
+                percentilePrint.innerText = '~' + percentile;
+            } else {
+                percentilePrint.innerText = percentile;
+            }
+
+        }
+
+        function zProb(z) {
+            var flag;
+            var p;
+
+            if (z < -7) { return 0.0; }
+            if (z > 7) { return 1.0; }
+
+
+            if (z < 0.0) { flag = true; }
+            else
+            { flag = false; }
+
+            z = Math.abs(z);
+            var b = 0.0;
+            var s = Math.sqrt(2) / 3 * z;
+            var HH = .5;
+
+            for (var i = 0; i < 12; i++) {
+                var a = Math.exp(-HH * HH / 9) * Math.sin(HH * s) / HH;
+                b = b + a;
+                HH = HH + 1.0;
+            }
+            p = .5 - b / Math.PI;
+            //p=b/Math.PI;
+            if (!flag) { p = 1.0 - p; }
+            return p;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../">Dan Leonard</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experiments <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="">Penis Percentile <span class="sr-only">(current)</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" role="main">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="calculator">
+                    <div class="page-header">
+                        <h1>Calculator</h1>
+                    </div>
+                    <label for="calculator-length">Your length</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="calculator-length" aria-describedby="calculator-length-addon" onchange="calculatePercentile()" />
+                        <span class="input-group-addon" id="calculator-length-addon">cm</span>
+                    </div>
+                    <br />
+                    <p>Your penis is longer than <strong><span id="percentile"></span>%</strong> of penises.</p>
+                    <p hidden="hidden" id="disclaimer">Still shorter than <a href="https://en.wikipedia.org/wiki/Jonah_Falcon" title="Wikipedia article on Jonah Falcon, holder of the world's longest penis.'">Jonah Falcon</a>'s 34 cm member.</p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="distribution">
+                    <div class="page-header">
+                        <h1>Distribution</h1>
+                    </div>
+                    <label for="distribution-mean">Mean length</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="distribution-mean" aria-describedby="distribution-mean-addon" disabled="disabled" value="13.12" />
+                        <span class="input-group-addon" id="distribution-mean-addon">cm</span>
+                    </div>
+                    <br />
+                    <label for="distribution-stdev">Standard deviation</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="distribution-stdev" aria-describedby="distribution-stdev-addon" disabled="disabled" value="1.66" />
+                        <span class="input-group-addon" id="distribution-stdev-addon">cm</span>
+                    </div>
+                    <br />
+                    <p>
+                        Data is for erect penis length as found in <a href="https://dx.doi.org/10.1111%2Fbju.13010" target="_blank" title="Am I normal? A systematic review and construction of nomograms for flaccid and erect penis length and circumference in up to 15 521 men">doi:10.1111/bju.13010</a>.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
