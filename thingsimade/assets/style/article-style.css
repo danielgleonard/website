@@ -32,15 +32,19 @@ hgroup.titlearea .subtitle {
 
 .content {
     /* width: 100%; */
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 28px;
+    padding-left: 28px;
     margin-right: auto;
     margin-left: auto;
     max-width: 960px;
 }
 
+li {
+    margin-bottom: 0.2em;
+}
+
 section h1 {
-    font-size: x-large;
+    font-size: 1.75em;
     margin-bottom: 0.2em;
 }
 
@@ -48,6 +52,12 @@ section p {
     margin-top: 0.3em;
 }
 
-p {
-    font-family: "Georgia Pro","Georgia",serif;
+section img {
+    max-width:100%;
+    max-height:100%;
+}
+
+body {
+    font-family: "Georgia","Palatino","Times",serif;
+    font-variant-numeric: oldstyle-nums;
 }
