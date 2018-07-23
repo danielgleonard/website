@@ -9,6 +9,7 @@
     <meta name="author" content="Dan Leonard">
     <meta name="description" content="Instructions for how I made a Bao la Kiwswahili game board" />
 
+    <script src="../../../assets/js/anchor.min.js"></script>
     <link rel="stylesheet" href="../../../assets/style/article-style.css">
 </head>
 
@@ -20,12 +21,21 @@
                 <h2 class="subtitle">Kiswahili Board Game</h2>
                 <p>How to make a <em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao la Kiswahili</em> board game with some lumber and a router</p>
             </hgroup>
+                <h1 id="introduction">Introduction</h1>
             <section>
-                <h1>Introduction</h1>
                 <p><em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao la Kiswahili</em> is a traditional mancala game played in East Africa.</p>
             </section>
         </article>
     </div>
+
+    <!-- Add anchor links to headings with https://github.com/bryanbraun/anchorjs -->
+    <script>
+        anchors.options = {
+            visible: 'always',
+            placement: 'left'
+        };
+        anchors.add('h1:not(.title),h2:not(.subtitle),h3,h4,h5,h6');
+    </script>
 </body>
 
 </html>
