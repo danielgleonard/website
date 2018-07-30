@@ -19,15 +19,15 @@ h3 {
     margin-bottom: 0.2em;
 }
 
-hgroup.titlearea .title {
+hgroup.titletext .title {
     margin-bottom: 0.2em;
-    font-size: 1.75em;
+    font-size: 2.25em;
 }
 
-hgroup.titlearea .subtitle {
+hgroup.titletext .subtitle {
     margin-top: 0;
     margin-bottom: 0.3em;
-    font-size: 1.25em;
+    font-size: 1.75em;
 }
 
 .icon-inline {
@@ -78,8 +78,15 @@ li {
     margin-bottom: 0.2em;
 }
 
+section {
+    display: table;
+}
+
 section p {
     margin-top: 0.3em;
+    text-align: justify;
+    text-justify: auto;
+    text-align-last: auto;
 }
 
 img {
@@ -91,7 +98,7 @@ img {
 
 @media (min-width: 375px) {
     img.img-float-right {
-        max-width: 30%;
+        max-width: 40%;
         float: right;
         margin-left: 1em;
     }
@@ -103,10 +110,11 @@ img {
     }
 }
 
+#abstract {
+    font-size: 1.1em;
+}
+
 body {
     font-family: "Iowan","Cambria","Times New Roman","Times",serif;
     font-variant-numeric: oldstyle-nums;
-    text-align: justify;
-    text-justify: auto;
-    text-align-last: auto;
 }
