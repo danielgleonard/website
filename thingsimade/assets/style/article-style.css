@@ -3,6 +3,17 @@
     src: url("data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP") format("truetype");
 }
 
+body {
+    font-family: "Iowan","Cambria","Times New Roman","Times",serif;
+    font-variant-numeric: oldstyle-nums;
+}
+
+#site-title {
+    font-size: 1.75em;    
+    font-family: "Baskerville", "Garamond", "Palatino", serif;
+    text-align: center;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Baskerville", "Garamond", "Palatino", serif;
 }
@@ -90,15 +101,29 @@ section p {
 }
 
 img {
-    max-width: 100%;
-    max-height: 75%;
-    margin-bottom: 1em;
-    display: block;
+        max-width: 100%;
+        max-height: 75%;
+        margin-bottom: 1em;
+        display: block;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 500px) and (max-width: 650px) {
     img.img-float-right {
-        max-width: 40%;
+        max-width: 60%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.img-float-left {
+        max-width: 60%;
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 650px) {
+    img.img-float-right {
+        max-width: 50%;
         float: right;
         margin-left: 1em;
     }
@@ -114,7 +139,23 @@ img {
     font-size: 1.1em;
 }
 
-body {
-    font-family: "Iowan","Cambria","Times New Roman","Times",serif;
-    font-variant-numeric: oldstyle-nums;
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
 }
