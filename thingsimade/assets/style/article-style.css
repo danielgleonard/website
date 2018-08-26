@@ -14,10 +14,18 @@ body {
     text-align: center;
 }
 
+#publication-date {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Baskerville", "Garamond", "Palatino", serif;
 }
 
+h1 {
+    margin-bottom: 0em;
+}
 
 h2 {
     font-size: 1.75em;
@@ -31,13 +39,11 @@ h3 {
 }
 
 hgroup.titletext .title {
-    margin-bottom: 0.2em;
     font-size: 2.25em;
 }
 
 hgroup.titletext .subtitle {
     margin-top: 0;
-    margin-bottom: 0.3em;
     font-size: 1.75em;
 }
 
