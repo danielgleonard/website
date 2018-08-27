@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"  
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://danleonard.us/</loc>
+    <image:image>
+      <image:loc>https://danleonard.us/assets/img/intro-bg.jpg</image:loc>
+      <image:caption>Photo of Dan pointing at a map of the Virgin Islands</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danleonard.us/assets/img/downloads-bg.jpg</image:loc>
+      <image:caption>Dan lying on the floor</image:caption>
+    </image:image>
+
+    <lastmod>2018-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://danleonard.us/experiments/percentile/</loc>
+    <lastmod>2018-06-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://danleonard.us/thingsimade/physical/wood/bao/</loc>
+    <image:image>
+      <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/with_rocks.jpg</image:loc>
+      <image:caption>Foldable Bao la Kiswahili board, opened, with hinges visible holding boards together and with eight rocks in each hole on one of the two boards</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/not_loss.jpg</image:loc>
+      <image:caption>Paper with multiple circular holes and one square hole laid on top of 2×12 board</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/routing_2.jpg</image:loc>
+      <image:caption>Router laying atop 2×12 board with many circular cuts about 1 centemeter deep</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/hinge_section.jpg</image:loc>
+      <image:caption>2×12 board with groove along edge for applying hinges</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/staining_3.jpg</image:loc>
+      <image:caption>Finished bao boards laid side-to-side stained a deep red with a can of stain lying atop one board</image:caption>
+    </image:image>
+    <lastmod>2018-08-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+</urlset>

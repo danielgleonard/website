@@ -1,0 +1,80 @@
+#publication-date {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+
+hgroup.titletext .title {
+    font-size: 2.25em;
+}
+
+hgroup.titletext .subtitle {
+    margin-top: 0;
+    font-size: 1.75em;
+}
+
+.translation::before {
+    content: '\201C';
+    position: absolute;
+    margin-left: -1em;
+    width: 1em;
+    text-align: right;
+}
+
+.translation::after {
+    content: "\201D";
+}
+
+li {
+    margin-bottom: 0.2em;
+}
+
+section {
+    display: table;
+}
+
+section p {
+    margin-top: 0.3em;
+    text-align: justify;
+    text-justify: auto;
+    text-align-last: auto;
+}
+
+img {
+        max-width: 100%;
+        max-height: 75%;
+        margin-bottom: 1em;
+        display: block;
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+    img.img-float-right {
+        max-width: 60%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.img-float-left {
+        max-width: 60%;
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 650px) {
+    img.img-float-right {
+        max-width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.img-float-left {
+        max-width: 50%;
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+#abstract {
+    font-size: 1.1em;
+}

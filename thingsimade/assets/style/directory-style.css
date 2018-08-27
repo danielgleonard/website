@@ -1,0 +1,48 @@
+ul.project-listing {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.project-listing li {
+    height:7em;
+    display: table;
+    width: 100%;
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+    background-color: #f7f7f7;
+}
+
+ul.project-listing li:hover {
+    background-color: lightgray;
+}
+
+ul.project-listing li h4 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+ul.project-listing li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul.project-listing li a:hover {
+    text-decoration: underline;
+}
+
+img.thumbnail {
+    float: left;
+    height: 7em;
+    margin-right: 1em;
+}
+
+div.info {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 6em;
+}
+
+article header {
+    text-align: center;
+}
