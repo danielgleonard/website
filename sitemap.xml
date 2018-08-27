@@ -17,16 +17,16 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://danleonard.us/experiments/percentile/index.html</loc>
+    <loc>https://danleonard.us/experiments/percentile/</loc>
     <lastmod>2018-06-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://danleonard.us/thingsimade/physical/wood/bao/index.html</loc>
+    <loc>https://danleonard.us/thingsimade/physical/wood/bao/</loc>
     <image:image>
       <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/with_rocks.jpg</image:loc>
-      <image:caption>Finished board setup, opened, with hinges visible holding boards together and with eight rocks in each hole on one of the two boards</image:caption>
+      <image:caption>Foldable Bao la Kiswahili board, opened, with hinges visible holding boards together and with eight rocks in each hole on one of the two boards</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/not_loss.jpg</image:loc>
