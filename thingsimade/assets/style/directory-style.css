@@ -17,7 +17,7 @@ ul.project-listing li:hover {
 }
 
 ul.project-listing li h4 {
-    margin-top: 0em;
+    margin-top: 0;
     font-size: 1.5em;
     margin-bottom: 0.1em;
 }
