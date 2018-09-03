@@ -3,14 +3,26 @@
     font-size: 1.1em;
 }
 
-
-hgroup.titletext .title {
-    font-size: 2.25em;
+@media screen and (max-width: 500px) {
+    hgroup.titletext .title {
+        font-size: 11vw;
+    }
+    
+    hgroup.titletext .subtitle {
+        margin-top: 0;
+        font-size: 8.55vw;
+    }
 }
 
-hgroup.titletext .subtitle {
-    margin-top: 0;
-    font-size: 1.75em;
+@media screen and (min-width: 500px) {
+    hgroup.titletext .title {
+        font-size: 2.25em;
+    }
+    
+    hgroup.titletext .subtitle {
+        margin-top: 0;
+        font-size: 1.75em;
+    }
 }
 
 .translation::before {

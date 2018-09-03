@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "anchorjs-icons";
-    src: url("data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP") format("truetype");
-}
-
 body {
     font-family: "Iowan","Cambria","Times New Roman","Times",serif;
     font-variant-numeric: oldstyle-nums;
@@ -12,6 +7,11 @@ body {
     font-size: 1.75em;    
     font-family: "Baskerville", "Garamond", "Palatino", serif;
     text-align: center;
+}
+
+#site-title span {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,7 +45,7 @@ h3 {
 a.anchor {
     color: rgb(255, 64, 25);
     text-decoration: none;
-    font-family: 'anchorjs-icons';
+    font-family: sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -67,7 +67,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 9pt;
 }
 ul.breadcrumb li+li:before {
     padding: 8px;
@@ -84,4 +84,8 @@ ul.breadcrumb li a:hover {
 .icon-inline {
     height: 1em;
     width: 1em;
+}
+
+.bigspace {
+    width: 3em;
 }
