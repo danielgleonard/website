@@ -1,0 +1,67 @@
+$font-stack: "Iowan Old Style","Cambria","Times New Roman","Times",serif;
+$font-stack-headers: "Baskerville", "Garamond", "Palatino", serif;
+
+$color-primary: #F44336;
+$color-primary-light: #ff7961;
+$color-primary-dark: #ba000d;
+$color-secondary: #7C4DFF;
+$color-secondary-light: #b47cff;
+$color-secondary-dark: #3f1dcb;
+$color-text-light: #ffffff;
+$color-text-dark: #000000;
+
+/*
+nav{
+    a{
+        .nav-link-current {
+            color: green;
+        }
+    }
+}
+*/
+
+body {
+    font-family: $font-stack;
+    font-variant-numeric: oldstyle-nums;
+}
+
+#site-title {
+    font-size: 1.75em;
+    font-family: $font-stack-headers;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+        color: $color-primary-light;
+    }
+}
+
+a {
+    color: $color-primary;
+}
+a:visited {
+    color: $color-primary-dark
+}
+a:hover {
+    color: $color-primary-light;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Baskerville", "Garamond", "Palatino", serif;
+}
+
+.content {
+    /* width: 100%; */
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+::selection {
+    background: $color-secondary-dark;
+    color: $color-text-light; 
+}
