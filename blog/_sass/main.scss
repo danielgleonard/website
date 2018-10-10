@@ -1,5 +1,7 @@
-$font-stack: "Iowan Old Style","Cambria","Times New Roman","Times",serif;
-$font-stack-headers: "Baskerville", "Garamond", "Palatino", serif;
+$font-stack: "Iowan Old Style", "Georgia", serif;
+$font-stack-headers: "Mrs Eaves", "Monotype Baskerville", "Garamond", "Palatino", serif;
+$font-stack-title: "Bodoni 72", "Bodoni MT", "Bodoni", $font-stack-headers;
+$font-stack-sans: sans-serif;
 
 $color-primary: #F44336;
 $color-primary-light: #ff7961;
@@ -21,13 +23,17 @@ nav{
 */
 
 body {
+    font-size: 1.25em;
     font-family: $font-stack;
-    font-variant-numeric: oldstyle-nums;
+    color: $color-text-dark;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-variant-ligatures: discretionary-ligatures;
 }
 
-#site-title {
-    font-size: 1.75em;
-    font-family: $font-stack-headers;
+#site-title  {
+    font-size: 2em;
+    font-family: $font-stack-title;
+    font-variant: small-caps;
     text-align: center;
     a {
         text-decoration: none;
@@ -49,7 +55,31 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Baskerville", "Garamond", "Palatino", serif;
+    font-family: $font-stack-headers
+}
+
+article {
+    h1,h2,h3,h4,h5,h6 {
+        font-size: 2em;
+        font-style: italic;
+    }
+    header{
+        font-size: 1.25em;
+
+        h1 {    
+            font-weight: 300;
+            margin-bottom: .2em;
+        }
+        .post-meta {
+            font-family: $font-stack-headers;
+            font-style: italic;
+            margin-top: 0;
+            font-size: .75em;
+        }
+    }
+    .post-content {
+        
+    }
 }
 
 .content {
