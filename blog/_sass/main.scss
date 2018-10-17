@@ -35,6 +35,8 @@ body {
     font-family: $font-stack-title;
     font-variant: small-caps;
     text-align: center;
+    margin-bottom: 0.5em;
+
     a {
         text-decoration: none;
         color: inherit;
@@ -82,7 +84,27 @@ article {
     }
 }
 
-.content {
+nav {
+    text-align: center;
+    color: $color-primary;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul,ol {
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+
+        li {
+            display: inline;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+
+.content,nav {
     /* width: 100%; */
     padding-right: 28px;
     padding-left: 28px;
@@ -94,4 +116,10 @@ article {
 ::selection {
     background: $color-secondary-dark;
     color: $color-text-light; 
+}
+
+ul,ol {
+    li {
+        padding-bottom: 1em;
+    }
 }

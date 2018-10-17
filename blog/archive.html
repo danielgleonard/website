@@ -1,0 +1,17 @@
+---
+layout: page
+title:  Archive
+---
+
+<ol style="list-style: none">
+
+{% for post in site.posts %}
+
+   
+    <li>
+        <i>{{ post.date | date_to_long_string }}</i> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+
+{% endfor %}
+
+</ul>
