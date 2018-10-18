@@ -30,6 +30,7 @@ body {
     font-variant-ligatures: discretionary-ligatures;
 }
 
+
 #site-title  {
     font-size: 2em;
     font-family: $font-stack-title;
@@ -122,4 +123,14 @@ ul,ol {
     li {
         padding-bottom: 1em;
     }
+}
+
+.post-content {
+    p {
+        line-height: 1.25em;
+    }
+}
+
+blockquote.retelling {
+    font-style: italic;
 }
