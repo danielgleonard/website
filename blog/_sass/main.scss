@@ -30,7 +30,6 @@ body {
     font-variant-ligatures: discretionary-ligatures;
 }
 
-
 #site-title  {
     font-size: 2em;
     font-family: $font-stack-title;
@@ -56,6 +55,10 @@ a:visited {
 a:hover {
     color: $color-primary-light;
 }
+a.readmore {
+    font-style: italic;
+    font-size: .75em;
+}
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $font-stack-headers
@@ -68,10 +71,16 @@ article {
     }
     header{
         font-size: 1.25em;
-
         h1 {    
             font-weight: 300;
             margin-bottom: .2em;
+            a {
+                color: $color-text-dark;
+                text-decoration: none;
+            }
+            a:hover {
+                color: $color-primary-light;
+            }
         }
         .post-meta {
             font-family: $font-stack-headers;
@@ -81,7 +90,9 @@ article {
         }
     }
     .post-content {
-        
+        p {
+            line-height: 1.25em;
+        }
     }
 }
 
@@ -125,10 +136,13 @@ ul,ol {
     }
 }
 
-.post-content {
-    p {
-        line-height: 1.25em;
-    }
+blockquote {
+    border-left: $color-primary;
+    border-left-width: medium;
+    border-left-style: solid;
+    padding-right: .25em;
+    padding-left: .5em;
+    background-color: #f9f9f9;
 }
 
 blockquote.retelling {
