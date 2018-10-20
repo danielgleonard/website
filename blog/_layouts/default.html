@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{%- if page.title != null -%}{{ page.title }} | {%- endif -%}{{ site.title }}</title>
+
+    <link rel="stylesheet" type="text/css"
+    href="{{ site.baseurl }}/assets/css/styles.css" />
+</head>
+
+<body>
+    <header>
+        {% include header.html %}
+        {% include navigation.html %}
+    </header>
+    <div class="content">
+        {{ content }}
+    </div>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+
+</html>
