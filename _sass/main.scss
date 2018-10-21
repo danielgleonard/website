@@ -1,0 +1,150 @@
+$font-stack: "Iowan Old Style", "Georgia", serif;
+$font-stack-headers: "Mrs Eaves", "Monotype Baskerville", "Garamond", "Palatino", serif;
+$font-stack-title: "Bodoni 72", "Bodoni MT", "Bodoni", $font-stack-headers;
+$font-stack-sans: sans-serif;
+
+$color-primary: #F44336;
+$color-primary-light: #ff7961;
+$color-primary-dark: #ba000d;
+$color-secondary: #7C4DFF;
+$color-secondary-light: #b47cff;
+$color-secondary-dark: #3f1dcb;
+$color-text-light: #ffffff;
+$color-text-dark: #000000;
+
+/*
+nav{
+    a{
+        .nav-link-current {
+            color: green;
+        }
+    }
+}
+*/
+
+body {
+    font-size: 1.25em;
+    font-family: $font-stack;
+    color: $color-text-dark;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+#site-title  {
+    font-size: 2em;
+    font-family: $font-stack-title;
+    font-variant: small-caps;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+        color: $color-primary-light;
+    }
+}
+
+a {
+    color: $color-primary;
+}
+a:visited {
+    color: $color-primary-dark
+}
+a:hover {
+    color: $color-primary-light;
+}
+a.readmore {
+    font-style: italic;
+    font-size: .75em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-stack-headers
+}
+
+article {
+    h1,h2,h3,h4,h5,h6 {
+        font-size: 2em;
+        font-style: italic;
+    }
+    header{
+        font-size: 1.25em;
+        h1 {
+            font-weight: 300;
+            margin-bottom: .2em;
+            a {
+                color: $color-text-dark;
+                text-decoration: none;
+            }
+            a:hover {
+                color: $color-primary-light;
+            }
+        }
+        .post-meta {
+            font-family: $font-stack-headers;
+            font-style: italic;
+            margin-top: 0;
+            font-size: .75em;
+        }
+    }
+    .post-content {
+        p {
+            line-height: 1.25em;
+        }
+    }
+}
+
+nav {
+    text-align: center;
+    color: $color-primary;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    ul,ol {
+        padding: 0;
+        list-style: none;
+        list-style-type: none;
+
+        li {
+            display: inline;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+
+.content,nav {
+    /* width: 100%; */
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+}
+
+::selection {
+    background: $color-secondary-dark;
+    color: $color-text-light;
+}
+
+ul,ol {
+    li {
+        padding-bottom: 1em;
+    }
+}
+
+blockquote {
+    border-left: $color-primary;
+    border-left-width: medium;
+    border-left-style: solid;
+    padding-right: .25em;
+    padding-left: .5em;
+    background-color: #f9f9f9;
+}
+
+blockquote.retelling {
+    font-style: italic;
+}
