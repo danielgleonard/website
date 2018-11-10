@@ -9,10 +9,13 @@
     <meta name="robots" content="index, follow" />
     <meta name="description" content="A personal profile" />
     <meta name="author" content="Dan Leonard" />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/vomiting-emoji.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon"
+    href="assets/img/vomiting-emoji.ico" />
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56093027-2"></script>
+    <script async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-56093027-2">
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -38,7 +41,25 @@
 </head>
 
 <body>
-
+    <hgroup itemscope itemtype="http://schema.org/Person">
+        <h1 id="author" itemprop="name">
+            Dan Leonard
+        </h1>
+    </hgroup>
+    <nav>
+        <ul>
+            <li>
+                <a href="./blog/">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="./thingsimade/">
+                    Things&nbsp;I&nbsp;Made
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>
