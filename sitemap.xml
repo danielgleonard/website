@@ -64,6 +64,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://danleonard.us/blog/feed.xml</loc>
+    <lastmod>2018-12-06T11:00:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://danleonard.us/blog/kenya/2018/11/29/african-wedding.html</loc>
     <image:image>
       <image:loc>https://danleonard.us/blog/assets/img/Mombasa_wedding_groom_arrival_1.jpg</image:loc>
