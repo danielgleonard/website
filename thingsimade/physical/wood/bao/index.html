@@ -117,19 +117,20 @@
                     </ul>
                 </nav>
         </header>
-        <article>
+        <article vocab="http://schema.org/" typeof="HowTo">
             <header>
                 <hgroup class="titletext">
                     <h1>
-                        <span class="title" lang="sw" xml:lang="sw">Bao la Kiswahili</span>
+                        <span class="title" lang="sw" xml:lang="sw" property="name">Bao la Kiswahili</span>
                         <br/>
                         <span class="subtitle translation" lang="en" xml:lang="en">Swahili Board Game</span>
                     </h1>
                 </hgroup>
-                <time id="publication-date" datetime="2018-08-26" pubdate="pubdate">26 August 2018</time>
+                <time property="datePublished" id="publication-date" datetime="2018-08-26"  pubdate="pubdate">26 August 2018</time>
                 <!-- <p><a href="https://en.wikipedia.org/wiki/Bao_(game)" title="Wikipedia (en): &ldquo;Bao (game)&rdquo;">Wikipedia</a></p> -->
                 <p id="abstract">How to easily make a mediocre <em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao la Kiswahili</em> board game with some lumber and a router.</p>
                 <img
+                    property="image"
                     srcset="assets/img/with_rocks-320.jpg 320w,
                             assets/img/with_rocks-640.jpg 640w,
                             assets/img/with_rocks-1280.jpg 1280w,
@@ -146,7 +147,7 @@
                     <a class="anchor" href="#introduction" title="Permalink for section “Introduction”" aria-label="Anchor">#</a>
                     Introduction
                 </h2>
-                <p><em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao la Kiswahili</em> is a traditional <a href="https://en.wikipedia.org/wiki/Mancala">mancala</a> game played in East Africa, primarily by the Swahili people of the Kenyan and Tanzanian coasts. The game is well-known as one of the most complex mancalas and mastering the game bestows one with high respect. Each player exclusively controls two rows of eight <em lang="sw" xml:lang="sw">mashimo</em>, or “holes.” The fourth pit in each player's inner lap is the <em lang="sw" xml:lang="sw">nyumba</em>, or “house,” often distinguished by its square shape in contrast to the other, circular pits. Each player begins the game with 32 <em lang="sw" xml:lang="sw">kete</em> (“shells”) and tries to reduce their opponent’s possessions.</p>
+                <p property="description"><em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao la Kiswahili</em> is a traditional <a href="https://en.wikipedia.org/wiki/Mancala">mancala</a> game played in East Africa, primarily by the Swahili people of the Kenyan and Tanzanian coasts. The game is well-known as one of the most complex mancalas and mastering the game bestows one with high respect. Each player exclusively controls two rows of eight <em lang="sw" xml:lang="sw">mashimo</em>, or “holes.” The fourth pit in each player's inner lap is the <em lang="sw" xml:lang="sw">nyumba</em>, or “house,” often distinguished by its square shape in contrast to the other, circular pits. Each player begins the game with 32 <em lang="sw" xml:lang="sw">kete</em> (“shells”) and tries to reduce their opponent’s possessions.</p>
                 <p>This is all one needs to know in order to construct a board; however, the rules of <em lang="sw" xml:lang="sw" title="Swahili Board Game">Bao</em> are far more complex than elaborated here. More information can be found <a href="https://en.wikipedia.org/wiki/Bao_(game)" title="Wikipedia (en): “Bao (game)”">on Wikipedia</a> or, incredibly, the mancala wiki called “<a title="Mancala World: “Bao la Kiswahili”" href="http://mancala.wikia.com/wiki/Bao_la_Kiswahili">Mancala World</a>”.</p>
             </section>
             <section>
@@ -155,28 +156,80 @@
                     What you’ll need
                 </h2>
                 <ul>
-                    <li>64 rocks</li>
-                    <li>Two identical pieces of lumber sized to 1:4 ratio<br/>I used two 2×12 boards about 48 inches long; however, this became quite bulky and I would reccommend 2×10×40.</li>
-                    <li>Router
+                    <li property="supply" typeof="HowToSupply">
+                            <span property="requiredQuantity">64</span>
+                            <span property="name">rocks</span>
+                            <meta property="position" content="1">
+                    </li>
+                    <li property="supply" typeof="HowToSupply">
+                        <span property="requiredQuantity">Two</span>
+                        <span property="name">identical pieces of lumber sized to 1:4 ratio</span><br/>
+                        I used two 2×12 boards about 48 inches long; however, this became quite bulky and I would reccommend 2×10×40.
+                        <meta property="position" content="2">
+                    </li>
+                    <li><span property="tool" typeof="HowToTool">Router</span>
                         <ul>
-                            <li>Straight bit, D = 3/4"</li>
-                            <li>Round bit, D = 1/2"</li>
-                            <li>Round-over bit, R = 3/8"</li>
+                            <li property="tool" typeof="HowToTool">
+                                <span property="name">
+                                    Straight bit, D = 3/4"
+                                </span>
+                                <meta property="position" content="3">
+                            </li>
+                            <li property="tool" typeof="HowToTool">
+                                <span property="name">
+                                    Round bit, D = 1/2"
+                                </span>
+                                <meta property="position" content="4">
+                            </li>
+                            <li property="tool" typeof="HowToTool">
+                                <span property="name">
+                                    Round-over bit, R = 3/8"
+                                </span>
+                                <meta property="position" content="5">
+                            </li>
                         </ul>
                     </li>
-                    <li>2 continuous hinges</li>
-                    <li>Latches or other locking mechanism</li>
-                    <li>Sandpaper</li>
-                    <li>Stain</li>
-                    <li>Safety glasses 😎</li>
+                    <li property="supply" typeof="HowToSupply">
+                        <span property="name">
+                            2 continuous hinges
+                        </span>
+                        <meta property="position" content="6">
+                    </li>
+                    <li property="supply" typeof="HowToSupply">
+                        <span property="name">
+                            Latches or other locking mechanism
+                        </span>
+                        <meta property="position" content="7">
+                    </li>
+                    <li property="tool" typeof="HowToTool">
+                        <span property="name">
+                            Sandpaper
+                        </span>
+                        <meta property="position" content="8">
+                    </li>
+                    <li property="tool" typeof="HowToTool">
+                        <span property="name">
+                            Stain
+                        </span>
+                        <meta property="position" content="9">
+                    </li>
+                    <li property="tool" typeof="HowToTool">
+                        <span property="name">
+                            Safety glasses 😎
+                        </span>
+                        <meta property="position" content="10">
+                    </li>
                 </ul>
             </section>
-            <section>
+            <section property="step" typeof="HowToStep">
+                <meta property="position" content="1"/>
+                <meta property="url" content="https://danleonard.us/thingsimade/physical/wood/bao/#preparation" />
                 <h2 id="preparation">
                     <a class="anchor" href="#preparation" title="Permalink for section “Preparation”" aria-label="Anchor">#</a>
-                    Preparation
+                    <span property="name">Preparation</span>
                 </h2>
                 <img
+                    property="image"
                     srcset="assets/img/not_loss-320.jpg 320w,
                             assets/img/not_loss-640.jpg 640w,
                             assets/img/not_loss-1280.jpg 1280w,
@@ -186,20 +239,27 @@
                     alt="Paper with multiple circular holes and one square hole laid on top of 2×12 board"
                     type="image/jpeg"
                 />
-                <p>Measure out the locations for your cuts. I recommend using a speed square and compass to draw perfect circles on your lumber in the exact locations where you intend to cut; however, I had neither &ndash; so I created a template of seven circles and a square in Illustrator and transferred it to the wood.</p>
-                <p>The template visible in the above image (for a 2×12 board) can be downloaded as a <abbr title="Portable Document Format">PDF</abbr> document <a href="assets/doc/bao_template.pdf" title="PDF template of mashimo" hreflang="und" media="print" type="application/pdf">here</a>.</p>
+                <p property="text">
+                    Measure out the locations for your cuts. I recommend using a speed square and compass to draw perfect circles on your lumber in the exact locations where you intend to cut; however, I had neither &ndash; so I created a template of seven circles and a square in Illustrator and transferred it to the wood.
+                </p>
+                <p>
+                    The template visible in the above image (for a 2×12 board) can be downloaded as a <abbr title="Portable Document Format">PDF</abbr> document <a href="assets/doc/bao_template.pdf" title="PDF template of mashimo" hreflang="und" media="print" type="application/pdf">here</a>.
+                </p>
             </section>
             <section>
                 <h2 id="construction">
                     <a class="anchor" href="#construction" title="Permalink for section “Construction”" aria-label="Anchor">#</a>
                     Construction
                 </h2>
-                <section>
+                <section property="step" typeof="HowToStep">
+                    <meta property="position" content="2"/>
+                    <meta property="url" content="https://danleonard.us/thingsimade/physical/wood/bao/#excavation" />
                     <h3 id="excavation">
                         <a class="anchor" href="#excavation" title="Permalink for section “Excavation”" aria-label="Anchor">#</a>
-                        Excavation
+                        <span property="name">Excavation</span>
                     </h3>
                     <img
+                        property="image"
                         srcset="assets/img/routing_2-320.jpg 320w,
                                 assets/img/routing_2-640.jpg 640w,
                                 assets/img/routing_2-1280.jpg 1280w,
@@ -210,16 +270,25 @@
                         class="img-float-right"
                         type="image/jpeg"
                     />
-                    <p>Using the straight bit, I began boring out the circular markings. Taking care to never dig too deap for fear of overheating the router, I made repeated cuts about 1/8" deep &ndash; extending the router depth each time.</p>
-                    <p>For the final depth, I used the round bit around the bottom rim of each circle in order to make a smooth curve. The interior of the bottom &ndash; not the rounded edges &ndash; was then smoothed with the straight bit.</p>
-                    <p>Finally, I used the round-over bit on the top lip of each <em lang="sw" xml:lang="sw">mshimo</em> in order to get a round, smooth edge.</p>
+                    <p>
+                        Using the straight bit, I began boring out the circular markings. Taking care to never dig too deap for fear of overheating the router, I made repeated cuts about 1/8" deep &ndash; extending the router depth each time.
+                    </p>
+                    <p>
+                        For the final depth, I used the round bit around the bottom rim of each circle in order to make a smooth curve. The interior of the bottom &ndash; not the rounded edges &ndash; was then smoothed with the straight bit.
+                    </p>
+                    <p>
+                        Finally, I used the round-over bit on the top lip of each <em lang="sw" xml:lang="sw">mshimo</em> in order to get a round, smooth edge.
+                    </p>
                 </section>
-                <section>
+                <section property="step" typeof="HowToStep">
+                    <meta property="position" content="3"/>
+                    <meta property="url" content="https://danleonard.us/thingsimade/physical/wood/bao/#hinge-prep" />
                     <h3 id="hinge-prep">
                         <a class="anchor" href="#hinge-prep" title="Permalink for section “Hinge Preparation”" aria-label="Anchor">#</a>
-                        Hinge preparation
+                        <span property="name">Hinge preparation</span>
                     </h3>
                     <img
+                        property="image"
                         srcset="assets/img/hinge_section-320.jpg 320w,
                                 assets/img/hinge_section-640.jpg 640w,
                                 assets/img/hinge_section-1280.jpg 1280w,
@@ -230,16 +299,23 @@
                         class="img-float-right"
                         type="image/jpeg"
                     />
-                    <p>In order to fit hinges that would close tightly, I cut shallow grooves along the inner edge of each board.</p>
-                    <p>My grooves were a bit too deep for the continuous hinges I bought, and thus the hinges undergo excess strain when closed. I recommend you ensure the grooves are just deep enough to allow the hinge to be fully closed and nothing more.</p>
+                    <p property="text">
+                        In order to fit hinges that would close tightly, I cut shallow grooves along the inner edge of each board.
+                    </p>
+                    <p>
+                        My grooves were a bit too deep for the continuous hinges I bought, and thus the hinges undergo excess strain when closed. I recommend you ensure the grooves are just deep enough to allow the hinge to be fully closed and nothing more.
+                    </p>
                 </section>
             </section>
-            <section>
+            <section property="step" typeof="HowToStep">
+                <meta property="position" content="4"/>
+                <meta property="url" content="https://danleonard.us/thingsimade/physical/wood/bao/#finishing" />
                 <h2 id="finishing">
                     <a class="anchor" href="#finishing" title="Permalink for section “Finishing”" aria-label="Anchor">#</a>
-                    Finishing
+                    <span property="name">Finishing</span>
                 </h2>
                 <img
+                    property="image"
                     srcset="assets/img/staining_3-320.jpg 320w,
                             assets/img/staining_3-640.jpg 640w,
                             assets/img/staining_3-1280.jpg 1280w,
@@ -251,15 +327,17 @@
                     type="image/jpeg"
                 />
                 <p>I first sanded the boards thoroghly by hand, taking care to get the insides of each <em lang="sw" xml:lang="sw">mshimo</em>).</p>
-                <p>After sanding, I stained the boards. The stain I used as depicted in the photo at right was Varathane's Traditional Cherry. Of course, there is no proscribed “traditional” color of <em lang="sw" xml:lang="sw">Bao</em> boards, and regardless, no lumber you’re getting at a North American Home Depot is going to be the same as in East Africa.</p>
+                <p property="text">After sanding, I stained the boards. The stain I used as depicted in the photo at right was Varathane's Traditional Cherry. Of course, there is no proscribed “traditional” color of <em lang="sw" xml:lang="sw">Bao</em> boards, and regardless, no lumber you’re getting at a North American Home Depot is going to be the same as in East Africa.</p>
                 <p>The method I found most effective for applying stain (which I only perfected by the second board) was to get a brush soaked in stain and heavily lather the inner vertical edge of one <em lang="sw" xml:lang="sw">mshimo</em> at a time. This method allowed the stain to flow nad fill the bottom of the <em lang="sw" xml:lang="sw">mshimo</em> quickly, allowing me to rapidly sop up the stain without excess absorption.</p>
             </section>
-            <section>
+            <section property="step" typeof="HowToStep">
+                <meta property="position" content="5"/>
+                <meta property="url" content="https://danleonard.us/thingsimade/physical/wood/bao/#hardware" />
                 <h2 id="hardware">
                     <a class="anchor" href="#hardware" title="Permalink for section “Adding the Hardware”" aria-label="Anchor">#</a>
-                    Adding the Hardware
+                    <span property="name">Adding the Hardware</span>
                 </h2>
-                <p>I added the hinges within their grooves, taking special care to make sure they were parallel to each other and to the board itself. Next, I added two sash locks on the opening side, allowing the board to be closed securely.</p>
+                <p property="text">I added the hinges within their grooves, taking special care to make sure they were parallel to each other and to the board itself. Next, I added two sash locks on the opening side, allowing the board to be closed securely.</p>
                 <p>With an operable board, I scavenged<span title="Definitely didn't steal">*</span> 64 rocks and locked them within the board. And thus it was complete.</p>
             </section>
         </article>
