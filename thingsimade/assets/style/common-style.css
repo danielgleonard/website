@@ -1,10 +1,28 @@
+:root {
+  --color-bg-light: #ffffff;
+  --color-bg-dark: #1c1c1c;
+
+  --color-text-primary-light: #000000;
+  --color-text-primary-dark: #ffffff;
+
+  --color-bg: var(--color-bg-light);
+  --color-text-primary: var(--color-text-primary-light);
+
+  @media (prefers-color-scheme: dark) {
+    --color-bg: var(--color-bg-dark);
+    --color-text-primary: var(--color-text-primary-dark);
+  }
+}
+
 body {
     font-family: "Iowan Old Style","Cambria","Times New Roman","Times",serif;
     font-variant-numeric: oldstyle-nums;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
 }
 
 #site-title {
-    font-size: 1.75em;    
+    font-size: 1.75em;
     font-family: "Baskerville", "Garamond", "Palatino", serif;
     text-align: center;
 }
