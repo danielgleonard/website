@@ -1,16 +1,28 @@
 :root {
-  --color-bg-light: #ffffff;
-  --color-bg-dark: #1c1c1c;
+  --color-bg-primary-light: #ffffff;
+  --color-bg-primary-dark: #1c1c1c;
+
+  --color-bg-secondary-light: #eeeeee;
+  --color-bg-secondary-dark: #282828;
 
   --color-text-primary-light: #000000;
   --color-text-primary-dark: #ffffff;
 
-  --color-bg: var(--color-bg-light);
-  --color-text-primary: var(--color-text-primary-light);
+  --color-accent-primary-light: rgb(255, 64, 25);
+  --color-accent-primary-dark: rgb(255, 64, 25);
 
-  @media (prefers-color-scheme: dark) {
-    --color-bg: var(--color-bg-dark);
+  --color-bg-primary: var(--color-bg-primary-light);
+  --color-bg-secondary: var(--color-bg-secondary-light);
+  --color-text-primary: var(--color-text-primary-light);
+  --color-accent-primary: var(--color-accent-primary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: var(--color-bg-primary-dark);
+    --color-bg-secondary: var(--color-bg-secondary-dark);
     --color-text-primary: var(--color-text-primary-dark);
+    --color-accent-primary: var(--color-accent-primary-dark);
   }
 }
 
@@ -18,7 +30,7 @@ body {
     font-family: "Iowan Old Style","Cambria","Times New Roman","Times",serif;
     font-variant-numeric: oldstyle-nums;
     color: var(--color-text-primary);
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-primary);
 }
 
 #site-title {
@@ -61,7 +73,7 @@ h3 {
 }
 
 a.anchor {
-    color: rgb(255, 64, 25);
+    color: var(--color-accent-primary);
     text-decoration: none;
     font-family: sans-serif;
     font-style: normal;
@@ -81,7 +93,7 @@ a.anchor {
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
-    background-color: #eeeeee;
+    background-color: var(--color-bg-secondary);
 }
 ul.breadcrumb li {
     display: inline;
@@ -89,7 +101,7 @@ ul.breadcrumb li {
 }
 ul.breadcrumb li+li:before {
     padding: 8px;
-    color: black;
+    /*color: black;*/
     content: "/\00a0";
 }
 ul.breadcrumb li a {
