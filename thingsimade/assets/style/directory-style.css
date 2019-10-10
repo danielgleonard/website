@@ -1,3 +1,21 @@
+:root {
+  --color-bg-tertiary-light: #f7f7f7;
+  --color-bg-tertiary-dark: #282828;
+
+  --color-bg-quaternary-light: lightgray;
+  --color-bg-quaternary-dark: darkgray;
+
+  --color-bg-tertiary: var(--color-bg-tertiary-light);
+  --color-bg-quaternary: var(--color-bg-quaternary-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-tertiary: var(--color-bg-tertiary-dark);
+    --color-bg-quaternary: var(--color-bg-quaternary-dark);
+  }
+}
+
 ul.project-listing {
     list-style: none;
     padding-left: 0;
@@ -9,11 +27,11 @@ ul.project-listing li {
     width: 100%;
     font-size: 1.25em;
     margin-bottom: 1rem;
-    background-color: #f7f7f7;
+    background-color: var(--color-bg-tertiary);
 }
 
 ul.project-listing li:hover {
-    background-color: lightgray;
+    background-color: var(--color-bg-quaternary);
 }
 
 ul.project-listing li h4 {
