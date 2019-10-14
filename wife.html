@@ -68,8 +68,11 @@
       <article vocab="http://schema.org/" typeof="EmailMessage">
             <header>
                 <p>
-                    <span id="author" rel="author" property="sender" typeof="Person">
-                        Mark <span class="censor">█████████</span>
+                    <span id="author" property="sender" typeof="Person">
+                        <span property="givenName">Mark</span>
+                        <span property="familyName" class="censor">█████████</span>
+                        <meta property="additionalName" content="MarkusJ" />
+                        <meta property="url" content="https://twitter.com/MarkusJ" />
                     </span>
                     <span id="date" property="dateSent" >
                         <time typeof="DateTime" datetime="2016-04-05">
@@ -78,7 +81,10 @@
                     </span>
                     <br/>
                     <span id="recipient" >
-                        to <span property="recipient" typeof="Person" class="censor">█████</span>
+                        to
+                        <span property="recipient" typeof="Person" class="censor">
+                            <span property="name">█████</span>
+                        </span>
                     </span>
                 </p>
             </header>
