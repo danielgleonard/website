@@ -3,13 +3,13 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://danleonard.us/</loc>
-    <lastmod>2018-11-10</lastmod>
+    <lastmod>2019-10-23T22:27:56Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://danleonard.us/experiments/percentile/</loc>
-    <lastmod>2018-06-19</lastmod>
+    <lastmod>2019-10-10T02:17:39Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
@@ -41,19 +41,19 @@
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/physical/wood/</loc>
-    <lastmod>2018-08-26</lastmod>
+    <lastmod>2018-09-03T15:47:51Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/physical/</loc>
-    <lastmod>2018-08-26</lastmod>
+    <lastmod>2018-09-03T15:47:51Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/</loc>
-    <lastmod>2018-08-26</lastmod>
+    <lastmod>2018-09-03T15:47:51Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
