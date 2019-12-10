@@ -3,13 +3,13 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://danleonard.us/</loc>
-    <lastmod>2019-11-19T07:32:28Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://danleonard.us/experiments/percentile/</loc>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
@@ -35,25 +35,25 @@
       <image:loc>https://danleonard.us/thingsimade/physical/wood/bao/assets/img/staining_3.jpg</image:loc>
       <image:caption>Finished bao boards laid side-to-side stained a deep red with a can of stain lying atop one board</image:caption>
     </image:image>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/physical/wood/</loc>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/physical/</loc>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://danleonard.us/thingsimade/</loc>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -127,7 +127,7 @@
   </url>
   <url>
     <loc>https://danleonard.us/wife.html</loc>
-    <lastmod>2019-11-19T21:25:04Z</lastmod>
+    <lastmod>2019-12-10T00:06:25Z</lastmod>
     <changefreq>never</changefreq>
     <priority>0.1</priority>
   </url>
