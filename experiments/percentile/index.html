@@ -46,36 +46,24 @@
         crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- 🍆 -->
     <script type="application/javascript" src="percentile-calculator.js"></script>
 </head>
 
 <body vocab="https://schema.org/">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container" typeof="BreadcrumbList">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" >
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span property="itemListElement" typeof="ListItem">
-                    <a property="item" typeof="WebPage" class="navbar-brand" href="/">
-                        <span property="name">Dan Leonard</span>
-                    </a>
-                    <meta property="position" content="1">
-                </span>
-            </div>
+            <a class="navbar-brand" href="/" property="itemListElement" typeof="ListItem">Dan Leonard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <!-- <li><a href="../../about">About</a></li> -->
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
                     <li class="dropdown">
                         <span property="itemListElement" typeof="ListItem">
                             <a property="item" typeof="WebPage" href=".." class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span property="name">Experiments</span> <span class="caret"></span></a>
@@ -93,16 +81,25 @@
         </div>
     </nav>
     <div class="container" role="main">
+        <header class="jumbotron">
+            <h1>Penis Percentile Calculator</h1>
+        </header>
         <div class="row">
             <div class="col-md-6">
                 <section id="calculator">
                     <div class="page-header">
-                        <h1>Calculator</h1>
+                        <h2>Calculator</h2>
                     </div>
-                    <label for="calculator-length">Your length</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="calculator-length" aria-describedby="calculator-length-addon" onchange="calculatePercentile()" />
-                        <span class="input-group-addon" id="calculator-length-addon">cm</span>
+                    <div class="form-group">
+                        <label for="calculator-length">Your length</label>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="calculator-length" aria-describedby="calculator-length-addon" onchange="calculatePercentile()" />
+                                <div class="input-group-append" id="calculator-length-addon">
+                                    <span class="input-group-text"><abbr title="centimeters">cm</abbr></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <br />
                     <p>Your penis is longer than <strong><span id="percentile"></span>%</strong> of penises.</p>
@@ -112,22 +109,34 @@
             <div class="col-md-6">
                 <section id="distribution">
                     <div class="page-header">
-                        <h1>Distribution</h1>
+                        <h2>Distribution</h2>
                     </div>
-                    <label for="distribution-mean">Mean length</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="distribution-mean" aria-describedby="distribution-mean-addon" disabled="disabled" value="13.12" />
-                        <span class="input-group-addon" id="distribution-mean-addon">cm</span>
+                    <div class="form-group">
+                        <label for="distribution-mean">Mean length</label>
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control" id="distribution-mean" aria-describedby="distribution-mean-addon" disabled="disabled" value="13.12" />
+                                <div class="input-group-append" id="distribution-mean-addon">
+                                    <span class="input-group-text"><abbr title="centimeters">cm</abbr></span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                     <br />
-                    <label for="distribution-stdev">Standard deviation</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="distribution-stdev" aria-describedby="distribution-stdev-addon" disabled="disabled" value="1.66" />
-                        <span class="input-group-addon" id="distribution-stdev-addon">cm</span>
+                    <div class="form-group">
+                        <label for="distribution-stdev">Standard deviation</label>
+                        <div class="form-group">
+                            <div class="input-group mb-2">
+                                <input type="number" class="form-control" id="distribution-stdev" aria-describedby="distribution-stdev-addon" disabled="disabled" value="1.66" />
+                                <div class="input-group-append" id="distribution-stdev-addon">
+                                    <span class="input-group-text"><abbr title="centimeters">cm</abbr></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <br />
                     <p>
-                        Data is for erect penis length as found in <a href="https://dx.doi.org/10.1111%2Fbju.13010" target="_blank" title="Am I normal? A systematic review and construction of nomograms for flaccid and erect penis length and circumference in up to 15 521 men">doi:10.1111/bju.13010</a>.
+                        Data is for erect penis length as found in <a href="https://doi.org/10.1111%2Fbju.13010" target="_blank" title="Am I normal? A systematic review and construction of nomograms for flaccid and erect penis length and circumference in up to 15 521 men">doi:10.1111/bju.13010</a>.
                     </p>
                 </section>
             </div>
