@@ -39,8 +39,9 @@
         #recipient {
             color: lightgray;
         }
-        .censor {
+        del {
             color: black;
+            background-color: black;
         }
         body {
             font-family: sans-serif;
@@ -73,7 +74,7 @@
                 <p>
                     <span id="author" property="sender" typeof="Person">
                         <span property="givenName">Mark</span>
-                        <span property="familyName" class="censor">█████████</span>
+                        <del property="familyName" title="Censored text">█████████</span>
                         <meta property="additionalName" content="MarkusJ" />
                         <meta property="url" content="https://twitter.com/MarkusJ" />
                     </span>
@@ -86,7 +87,7 @@
                     <span id="recipient" >
                         to
                         <span property="recipient" typeof="Person" class="censor">
-                            <span property="name">█████</span>
+                            <del property="name" title="Censored text">█████</span>
                         </span>
                     </span>
                 </p>
