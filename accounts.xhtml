@@ -35,9 +35,9 @@ some reason is covered by copyright law, it is licensed thus:
 	<meta name="description" content="Where to find me elsewhere on the Internet" />
 	<meta name="author" content="Dan Leonard’s Accounts" />
 	<link rel="icon" type="image/vnd.microsoft.icon"
-	href="assets/img/vomiting-emoji.ico" />
+		href="assets/img/vomiting-emoji.ico" />
 	<link rel="stylesheet" type="text/css"
-	href="assets/css/default-style.css" />
+		href="assets/css/default-style.css" />
 
 	<link rel="webmention" href="https://webmention.io/danleonard.us/webmention" />
 	<link rel="pingback" href="https://webmention.io/danleonard.us/xmlrpc" />
@@ -66,6 +66,13 @@ some reason is covered by copyright law, it is licensed thus:
 	<meta name="twitter:creator" content="@postingexpert" />
 
 	<style type="text/css">
+		/* Lower the maximum font-size used on the homepage */
+		@media screen and (min-width:901px) {
+			body {
+				font-size: 32px;
+			}
+		}
+
 		img.logo {
 			height: 1em;
 			display: inline-block;
@@ -76,49 +83,193 @@ some reason is covered by copyright law, it is licensed thus:
 	</style>
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body>
 	<main>
-		<hgroup rel="author" typeof="Person">
-			<h1 id="author">
-				<span property="givenName">Dan</span>
-				<span property="familyName">Leonard</span>
-				<meta property="url" content="https://danleonard.us/" />
-				<meta property="gender" typeof="Male" />
-				<meta property="sameAs" content="https://en.wikipedia.org/wiki/User:Dan_Leonard" />
+		<hgroup>
+			<h1>
+				Find me elsewhere
 			</h1>
 		</hgroup>
-		<section>
-			<h2>Social media</h2>
-			<ul>
-				<li>
-					<img alt="Instagram logo"
-						class="logo"
-						type="image/svg+xml"
-						src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" />
-					<a property="significantLink" href="https://instagram.com/postingexpert">
-						postingexpert
-					</a>
-				</li>
-				<li>
-					<img alt="Facebook logo"
-						class="logo"
-						type="image/svg+xml"
-						src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" />
-					<a property="significantLink" href="https://facebook.com/danielglennleonard">
-						Dan Leonard
-					</a>
-				</li>
-				<li>
-					<img alt="Twitter logo"
-						class="logo"
-						type="image/svg+xml"
-						src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" />
-					<a property="significantLink" href="https://twitter.com/postingexpert">
-						postingexpert
-					</a>
-				</li>
-			</ul>
-		</section>
+		<nav>
+			<section id="smart">
+				<h2>Intellectual pursuits</h2>
+				<ul>
+					<li>
+						<img alt="Wikipedia logo"
+							title="Wikipedia"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg" />
+						<a href="https://en.wikipedia.org/wiki/User:Dan_Leonard">
+							Dan Leonard
+						</a>
+					</li>
+					<li>
+						<img alt="Google Scholar logo"
+							title="Google Scholar"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" />
+						<a href="https://scholar.google.com/citations?user=YGI8Bc4AAAAJ">
+							Daniel G. Leonard
+						</a>
+					</li>
+				</ul>
+				<section id="professional">
+					<ul>
+						<li>
+							<img alt="LinkedIn logo"
+								title="LinkedIn"
+								class="logo"
+								type="image/svg+xml"
+								src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" />
+							<a href="https://www.linkedin.com/in/danielgleonard/">
+								Dan Leonard
+							</a>
+						</li>
+						<li>
+							<img alt="GitHub logo"
+								title="GitHub"
+								class="logo"
+								type="image/svg+xml"
+								src="https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg" />
+							<a href="https://github.com/danielgleonard">
+								danielgleonard
+							</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section id="social">
+				<h2>Social media</h2>
+				<ul>
+					<li>
+						<img alt="Instagram logo"
+							title="Instagram"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" />
+						<a href="https://instagram.com/postingexpert">
+							postingexpert
+						</a>
+					</li>
+					<li>
+						<img alt="Facebook logo"
+							title="Facebook"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" />
+						<a href="https://facebook.com/danielglennleonard">
+							Dan Leonard
+						</a>
+					</li>
+					<li>
+						<img alt="Twitter logo"
+							title="Twitter"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" />
+						<a href="https://twitter.com/postingexpert">
+							postingexpert
+						</a>
+					</li>
+					<li>
+						<img alt="YouTube logo"
+							title="YouTube"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" />
+						<a href="https://www.youtube.com/user/danhomer4">
+							Dan Leonard
+						</a>
+					</li>
+					<li>
+						<img alt="Apple Music logo"
+							title="YouTube"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/d/df/ITunes_logo.svg" />
+						<!-- <a href=""> -->
+							Dan Leonard
+						<!-- </a> -->
+					</li>
+					<li>
+						<img alt="Spotify logo"
+							title="YouTube"
+							class="logo"
+							type="image/svg+xml"
+							src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" />
+						<a href="https://open.spotify.com/user/12129203278">
+							Dan Leonard
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section id="gaming">
+				<h2>Games</h2>
+				<section id="chess">
+					<h3>Chess</h3>
+					<!-- Lichess puzzle of the day
+					<iframe src="https://lichess.org/training/frame?theme=wood&amp;bg=dark"
+						style= "width: 400px;
+								height: 444px;
+								float: right;
+								margin-left: 1em;
+								margin-bottom: 1em;
+								display: block;"
+						allowtransparency="true"
+						frameborder="0"></iframe> -->
+					<ul>
+						<li>
+							<img alt="Lichess.org logo"
+								title="Lichess.org"
+								class="logo"
+								type="image/svg+xml"
+								src="https://lichess1.org/assets/_vMTC2q/logo/lichess.svg" />
+							<a href="https://lichess.org/@/danleonard">
+								danleonard
+							</a>
+							<!-- <br /><small style="font-size: .5em;">(preferred)</small> -->
+						</li>
+						<li>
+							<img alt="Chess.com logo"
+								title="Chess.com"
+								class="logo"
+								type="image/vnd.microsoft.icon"
+								src="https://chess.com/favicon.ico" />
+							<a href="https://www.chess.com/member/danielgleonard">
+								danielgleonard
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section id="platforms">
+					<h3>Platforms</h3>
+					<ul>
+						<li>
+							<img alt="Steam logo"
+								title="Steam"
+								class="logo"
+								type="image/svg+xml"
+								src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" />
+							<a href="https://steamcommunity.com/id/danielgleonard/">
+								danielgleonard
+							</a>
+						</li>
+						<li>
+							<img alt="Xbox logo"
+								title="Xbox"
+								class="logo"
+								type="image/svg+xml"
+								src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Xbox_one_logo.svg" />
+							<a href="https://account.xbox.com/en-us/profile?gamertag=danhomer4">
+								danhomer4
+							</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</nav>
 	</main>
 </body>
 
