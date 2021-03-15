@@ -4,8 +4,10 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title>Now Playing</title>
 		<meta charset="utf-8" />
+
+		<title>Now Playing</title>
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="canonical" href="https://danleonard.us/nowplaying.xhtml" />
 
@@ -63,21 +65,24 @@
 					max-width: 980px;
 				}
 			}
+
+			hgroup {
+				margin-bottom: 1rem;
+			}
 			
-			figure#imagefig {
+			div#corollafig {
 				position:relative;
 			}
 
-			caption#display {
+			div#display {
 				font-family: 'dotmatrixregular', monospace;
 				font-size: 45%;
 				width: 40%;
-				position: relative;
-				margin-top: -59%;
+				margin-top: -50%;
+				margin-bottom: 50%;
 				height: 7em;
-				margin-left: 45%;
+				margin-left: 35%;
 				overflow: hidden;
-				position: relative;
 				background-color: black;
 				opacity: 50%;
 				/* padding-top: 0.5em;
@@ -90,10 +95,11 @@
 
 			marquee p, marquee h2 {
 				font-size: 1em;
-				letter-spacing: 0.5em;
+				letter-spacing: 1em;
 				color: greenyellow;
 				/* position: absolute; */
 				/* width: 100%; */
+				width: -moz-fit-content;
 				width: fit-content;
 				white-space: nowrap;
 				margin: 0.5em;
@@ -179,11 +185,11 @@
 	</head>
 
 	<body>
-		<main style="height: 100%">
+		<main>
 			<hgroup>
 				<h1>Now Playing</h1>
 			</hgroup>
-			<figure id="corollafig">
+			<div id="corollafig">
 				<!--
 				<img
 					width="100%"
@@ -206,18 +212,17 @@
 				<img id="corolla"
 					src="assets/img/corolla.jpg"
 					width="100%"
-					height="100%"
 					alt="Photo taken from behind of a Toyota Corolla driving northbound on Interstate 75 in Georgia. Exit 153 toward Sardis Church Road is visible on the right." />
 				
-				<caption id="display">
+				<div id="display">
 					<marquee>
 						<h2 id="now">Now playing:</h2>
 						<p  id="song">Never Meant</p>
 						<p  id="album">American Football</p>
 						<p  id="artist">American Football</p>
 					</marquee>
-				</caption>
-			</figure>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
