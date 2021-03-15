@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Now Playing</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="canonical" href="https://danleonard.us/nowplaying.xhtml" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<meta name="description" content="What I’m currently listening to" />
+		<meta name="author" content="Dan Leonard’s Now Playing" />
+		<link rel="icon" type="image/vnd.microsoft.icon"
+			href="assets/img/vomiting-emoji.ico" />
+		<link rel="stylesheet" type="text/css"
+			href="assets/css/default-style.css" />
+
+		<link rel="webmention" href="https://webmention.io/danleonard.us/webmention" />
+		<link rel="pingback" href="https://webmention.io/danleonard.us/xmlrpc" />
+
+		<link rel="me" href="https://danleonard.us" />
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-56093027-5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'UA-56093027-2');
+		</script>
+
+		<!-- Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Dan Leonard’s Now Playing" />
+		<meta property="og:description" content="What I’m currently listening to" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:url" content="https://danleonard.us/nowplaying.xhtml" />
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:creator" content="@postingexpert" />
+		
+		<style type="text/css">
+			/* Lower the maximum font-size used on the homepage */
+			@media screen and (min-width:901px) {
+				body {
+					font-size: 25px;
+				}
+			}
+
+			/* Keep image on-screen */
+			@media screen and (min-width:1001px) {
+				main {
+					max-width: 75%;
+				}
+			}
+			@media screen and (min-width:1201px) {
+				main {
+					max-width: 980px;
+				}
+			}
+			
+			figure#imagefig {
+				position:relative;
+			}
+
+			caption#display {
+				font-family: 'dotmatrixregular', monospace;
+				font-size: 45%;
+				width: 40%;
+				position: relative;
+				margin-top: -59%;
+				height: 7em;
+				margin-left: 45%;
+				overflow: hidden;
+				position: relative;
+				background-color: black;
+				opacity: 50%;
+				/* padding-top: 0.5em;
+				padding-bottom: 0.5em; */
+			}
+
+			marquee p, marquee h2 {
+				font-size: 1em;
+				letter-spacing: 0.5em;
+				color: greenyellow;
+				/* position: absolute; */
+				/* width: 100%; */
+				width: fit-content;
+				white-space: nowrap;
+				margin: 0.5em;
+				text-align: center;
+			}
+
+			@font-face {
+				font-family: 'dotmatrixregular';
+				src: url('assets/fonts/dotmatrix/dotmatrx-webfont.woff2') format('woff2'),
+					url('assets/fonts/dotmatrix/dotmatrx-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+		</style>
+		<!-- <style>
+			/* code for the car marquee */
+			caption#display {
+				font-family: 'dotmatrixregular', monospace;
+				font-size: 65%;
+				width: 40%;
+				position: relative;
+				margin-top: -59%;
+				height: 5em;
+				margin-left: 45%;
+				overflow: hidden;
+				position: relative;
+				background-color: black;
+				opacity: 50%;
+				/* padding-top: 0.5em;
+				padding-bottom: 0.5em; */
+			}
+
+			caption#display p, caption#display h2 {
+				font-size: 1em;
+				letter-spacing: 0.5em;
+				color: greenyellow;
+				/* position: absolute; */
+				/* width: 100%; */
+				width: fit-content;
+				white-space: nowrap;
+				margin: 0.5em;
+				text-align: center;
+				-moz-transform: translateX(100%);
+				-webkit-transform: translateX(100%);
+				transform: translateX(100%);
+				-moz-animation: scroll-left 2s linear infinite;
+				-webkit-animation: scroll-left 2s linear infinite;
+				animation: scroll-left 20s linear infinite;
+			}
+			
+			@-moz-keyframes scroll-left {
+				0% {
+					-moz-transform: translateX(100%);
+				}
+				100% {
+					-moz-transform: translateX(-100%);
+				}
+			}
+			
+			@-webkit-keyframes scroll-left {
+				0% {
+					-webkit-transform: translateX(100%);
+				}
+				100% {
+					-webkit-transform: translateX(-100%);
+				}
+			}
+			
+			@keyframes scroll-left {
+				0% {
+					-moz-transform: translateX(100%);
+					-webkit-transform: translateX(100%);
+					transform: translateX(100%);
+				}
+				100% {
+					-moz-transform: translateX(-100%);
+					-webkit-transform: translateX(-100%);
+					transform: translateX(-100%);
+				}
+			}
+		</style> -->
+	</head>
+
+	<body>
+		<main style="height: 100%">
+			<hgroup>
+				<h1>Now Playing</h1>
+			</hgroup>
+			<figure id="corollafig">
+				<!--
+				<img
+					width="100%"
+					srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Georgia_I75nb_exit_153.jpg/320px-Georgia_I75nb_exit_153.jpg 320w,
+							https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Georgia_I75nb_exit_153.jpg/640px-Georgia_I75nb_exit_153.jpg 640w,
+							https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Georgia_I75nb_exit_153.jpg/800px-Georgia_I75nb_exit_153.jpg 800w,
+							https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Georgia_I75nb_exit_153.jpg/1024px-Georgia_I75nb_exit_153.jpg 1024w,
+							https://upload.wikimedia.org/wikipedia/commons/e/e4/Georgia_I75nb_exit_153.jpg 5184w"
+					src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Georgia_I75nb_exit_153.jpg"
+					alt="Photo taken from behind of a Toyota Corolla driving northbound on Interstate 75 in Georgia. Exit 153 toward Sardis Church Road is visible on the right."
+					/>
+				-->
+				<!--
+					IMAGE COPYRIGHT NOTICE
+					===========================
+					“corolla.jpg” cropped from “File:Georgia I75nb exit 153.jpg” by Wikimedia Commons user Michael Rivera.
+					Please see https://commons.wikimedia.org/wiki/File:Georgia_I75nb_exit_153.jpg for more.
+					Licensed CC-BY-SA 4.0.
+				-->
+				<img id="corolla"
+					src="assets/img/corolla.jpg"
+					width="100%"
+					height="100%"
+					alt="Photo taken from behind of a Toyota Corolla driving northbound on Interstate 75 in Georgia. Exit 153 toward Sardis Church Road is visible on the right." />
+				
+				<caption id="display">
+					<marquee>
+						<h2 id="now">Now playing:</h2>
+						<p  id="song">Never Meant</p>
+						<p  id="album">American Football</p>
+						<p  id="artist">American Football</p>
+					</marquee>
+				</caption>
+			</figure>
+		</main>
+	</body>
+</html>
