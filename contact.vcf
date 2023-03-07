@@ -9,12 +9,7 @@ TEL;CELL;VOICE:+1 (847) 707-7458
 TEL;WORK;VOICE:+1 (312) 886-7089
 ADR;OTHER;LABEL="Daniel Leonard\n6N024 Foxwood Ct\nSaint Charles, IL 60175-6190\nUnited States of America":;;6N024 Foxwood Ct;Saint Charles;IL;60175-6190;United States
 ADR;HOME;LABEL="Daniel Leonard\n35W610 Park Ln\nSaint Charles, IL 60175-5183\nUnited States of America":;;35W610 Park Ln;Saint Charles;IL;60175-5183;United States
-ADR;WORK;;17081;77 W Jackson Blvd;Chicago;IL;60604-3531;United States
-LABEL;WORK;ENCODING=QUOTED-PRINTABLE:Ralph H. Metcalfe Federal Building=0D=0A=
-Mail Code LL-17J=0D=0A=
-77 W Jackson Blvd=0D=0A=
-Chicago, IL 60604-3531=0D=0A=
-United States
+ADR;WORK;LABEL="Daniel Leonard\nRCRA Authorization Specialist\nFloor 17, Unit 17081\nMail Code LL-17J\n77 W Jackson Blvd\nChicago, IL 60604-3531\nUnited States of America":;17081;77 W Jackson Blvd;Chicago;IL;60604-3531;United States
 X-MS-OL-DEFAULT-POSTAL-ADDRESS:1
 GENDER:M
 X-WAB-GENDER:2
