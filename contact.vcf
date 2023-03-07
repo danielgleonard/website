@@ -7,16 +7,10 @@ TITLE:RCRA State Authorization Specialist
 CLASS:public
 TEL;CELL;VOICE:+1 (847) 707-7458
 TEL;WORK;VOICE:+1 (312) 886-7089
-ADR;TYPE=mom’s;;6N024 Foxwood Ct;Saint Charles;IL;60175-6190;United States
-LABEL;TYPE=mom’s;;ENCODING=QUOTED-PRINTABLE:6N024 Foxwood Ct=0D=0A=
-Saint Charles, IL 60175-6190=0D=0A=
-United States
-ADR;TYPE=dad’s;PREF:;;35W610 Park Ln;Saint Charles;IL;60175-5183;United States
-LABEL;TYPE=dad’s;;PREF;ENCODING=QUOTED-PRINTABLE:35W610 Park Ln=0D=0A=
-Saint Charles, IL 60175-5183=0D=0A=
-United States
-ADR;WORK;;77 W Jackson Blvd #17081;Chicago;IL;60604-3531;United States
-LABEL;WORK;;ENCODING=QUOTED-PRINTABLE:Ralph H. Metcalfe Federal Building=0D=0A=
+ADR;TYPE=mom;LABEL="Daniel Leonard\n6N024 Foxwood Ct\nSaint Charles, IL 60175-6190\nUnited States of America":;;6N024 Foxwood Ct;Saint Charles;IL;60175-6190;United States
+ADR;TYPE=dad;LABEL="Daniel Leonard\n35W610 Park Ln\nSaint Charles, IL 60175-5183\nUnited States of America":;;35W610 Park Ln;Saint Charles;IL;60175-5183;United States
+ADR;WORK;17081;77 W Jackson Blvd;Chicago;IL;60604-3531;United States
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:Ralph H. Metcalfe Federal Building=0D=0A=
 Mail Code LL-17J=0D=0A=
 77 W Jackson Blvd=0D=0A=
 Chicago, IL 60604-3531=0D=0A=
