@@ -2,6 +2,7 @@ BEGIN:VCARD
 VERSION:4.0
 N;LANGUAGE=en-us:Leonard;Dan
 FN:Dan Leonard
+KIND:individual
 ORG:U.S. Environmental Protection Agency Region 5;LCRD Waste Management Permitting Section
 TITLE:RCRA State Authorization Specialist
 CLASS:public
