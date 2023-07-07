@@ -8,8 +8,8 @@ TITLE:RCRA State Authorization Specialist
 CLASS:public
 TEL;CELL;VOICE:+1 (847) 707-7458
 TEL;WORK;VOICE:+1 (312) 886-7089
-ADR;OTHER;LABEL="Daniel Leonard\n6N024 Foxwood Ct\nSaint Charles, IL 60175-6190\nUnited States of America":;;6N024 Foxwood Ct;Saint Charles;IL;60175-6190;United States
-ADR;HOME;LABEL="Daniel Leonard\n35W610 Park Ln\nSaint Charles, IL 60175-5183\nUnited States of America":;;35W610 Park Ln;Saint Charles;IL;60175-5183;United States
+ADR;OTHER;LABEL="Daniel Leonard\n3637 N Magnolia Ave Apt 3\nChicago, IL 60613-0253\nUnited States of America":;;3637 N Magnolia Ave Apt 3;Chicago;IL;60613-0253;United States
+ADR;OTHER;LABEL="Daniel Leonard\n35W610 Park Ln\nSaint Charles, IL 60175-5183\nUnited States of America":;;35W610 Park Ln;Saint Charles;IL;60175-5183;United States
 ADR;WORK;LABEL="Daniel Leonard\nRCRA Authorization Specialist\nFloor 17, Unit 17081\nMail Code LL-17J\n77 W Jackson Blvd\nChicago, IL 60604-3531\nUnited States of America":;Mail code LL-17J, unit 17081;77 W Jackson Blvd;Chicago;IL;60604-3531;United States
 X-MS-OL-DEFAULT-POSTAL-ADDRESS:1
 GENDER:M
@@ -17,7 +17,6 @@ X-WAB-GENDER:2
 URL;HOME:https://danleonard.us
 BDAY:19971121
 EMAIL;PREF;INTERNET:daniel@danleonard.us
-EMAIL;INTERNET:dleona9@illinois.edu
 EMAIL;INTERNET:leonard.daniel@epa.gov
 PHOTO;JPEG:https://danleonard.us/assets/img/Dan%20Leonard%20%E2%80%93%202021-07-22%20%E2%80%93%20Rocky%20Mountain%20National%20Park.jpg
 TZ:America/Chicago
