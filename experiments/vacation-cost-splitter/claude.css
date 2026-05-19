@@ -1,0 +1,1172 @@
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-RegularItalic-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-MediumItalic-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Bold-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-BoldItalic-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Regular-Static.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Medium-Static.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-MediumItalic-Static.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Semibold-Static.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-SemiboldItalic-Static.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Bold-Static.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-BoldItalic-Static.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+:root {
+  color-scheme: light dark;
+  --font-serif: "Anthropic Serif", Georgia, "Times New Roman", serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+body {
+  font-family:
+    "Anthropic Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: transparent;
+}
+html,
+body {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+:root {
+  --p: var(--color-text-primary);
+  --s: var(--color-text-secondary);
+  --t: var(--color-text-tertiary);
+  --bg2: var(--color-background-secondary);
+  --b: var(--color-border-secondary);
+}
+.t {
+  font-size: 14px;
+  fill: var(--p);
+}
+.ts {
+  font-size: 12px;
+  fill: var(--s);
+}
+.th {
+  font-size: 14px;
+  fill: var(--p);
+  font-weight: 500;
+}
+.box {
+  fill: var(--bg2);
+  stroke: var(--b);
+}
+.arr {
+  stroke: var(--t);
+  fill: none;
+  stroke-width: 1.5;
+}
+.node {
+  cursor: pointer;
+}
+.node:hover rect,
+.node:hover .box {
+  filter: brightness(0.97);
+}
+.node:hover text {
+  opacity: 0.8;
+}
+input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not(
+    form.elicit *
+  ),
+select:not(form.elicit *),
+textarea:not(form.elicit *) {
+  width: 100%;
+  height: 36px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 6px;
+  outline: none;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+textarea {
+  height: auto;
+  min-height: 80px;
+  resize: vertical;
+}
+input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not(
+    form.elicit *
+  ):hover,
+select:not(form.elicit *):hover,
+textarea:not(form.elicit *):hover {
+  border-color: var(--color-border-secondary);
+}
+input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not(
+    form.elicit *
+  ):focus,
+select:not(form.elicit *):focus,
+textarea:not(form.elicit *):focus {
+  border-color: var(--color-border-info);
+  box-shadow: 0 0 0 3px var(--color-background-info);
+}
+select {
+  cursor: pointer;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.1));
+  border-radius: 2px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-secondary);
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+  border-color: var(--color-border-primary);
+  transform: scale(1.1);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-secondary);
+  cursor: pointer;
+}
+button:not(#action-btns button):not(form.elicit button) {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+}
+button:not(#action-btns button):not(form.elicit button):hover {
+  background: var(--color-background-secondary);
+}
+button:not(#action-btns button):not(form.elicit button):active {
+  background: var(--color-border-tertiary);
+  transform: scale(0.98);
+}
+form.elicit {
+  background: var(--color-background-primary, #fff);
+  border: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 16px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+  margin: 4px 20px 24px;
+  overflow: hidden;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    border-radius 200ms ease-out,
+    padding 200ms ease-out,
+    margin 200ms ease-out;
+  --elicit-border-faint: color-mix(
+    in srgb,
+    var(--color-border-tertiary, rgba(31, 30, 29, 0.15)) 25%,
+    transparent
+  );
+  --elicit-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+form.elicit :is(button, input, textarea) {
+  font: inherit;
+}
+form.elicit .elicit-header,
+form.elicit .elicit-question {
+  font-family: var(--font-serif, "Anthropic Serif", Georgia, serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text-primary, #131313);
+}
+form.elicit .elicit-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px;
+  border-bottom: 0.5px solid
+    var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+}
+form.elicit .elicit-header > svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+form.elicit .elicit-header > span {
+  flex: 1;
+}
+form.elicit .elicit-body {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+form.elicit .elicit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+form.elicit .elicit-question {
+  margin: 0;
+}
+form.elicit .elicit-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+form.elicit .elicit-pill {
+  padding: 8px 12px;
+  border: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 9999px;
+  background: transparent;
+  color: var(--color-text-secondary, #383835);
+  cursor: pointer;
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+form.elicit .elicit-pill:hover {
+  border-color: var(--color-border-secondary, rgba(30, 30, 29, 0.3));
+}
+form.elicit .elicit-pill[data-accent="warning"] {
+  border-color: var(--color-text-warning, #5a4815);
+  background: color-mix(
+    in srgb,
+    var(--color-text-warning, #5a4815) 15%,
+    transparent
+  );
+  color: var(--color-text-warning, #5a4815);
+}
+form.elicit .elicit-pill[data-accent="danger"] {
+  border-color: var(--color-text-danger, #7f2c28);
+  background: color-mix(
+    in srgb,
+    var(--color-text-danger, #7f2c28) 15%,
+    transparent
+  );
+  color: var(--color-text-danger, #7f2c28);
+}
+form.elicit .elicit-pill[data-accent="success"] {
+  border-color: var(--color-text-success, #265b19);
+  background: color-mix(
+    in srgb,
+    var(--color-text-success, #265b19) 15%,
+    transparent
+  );
+  color: var(--color-text-success, #265b19);
+}
+form.elicit .elicit-pill[aria-pressed="true"] {
+  border: 0.5px solid var(--color-text-info, #184f95);
+  background: color-mix(
+    in srgb,
+    var(--color-text-info, #184f95) 15%,
+    transparent
+  );
+  color: var(--color-text-info, #184f95);
+}
+form.elicit .elicit-other {
+  margin-top: 8px;
+  height: 40px;
+  padding: 0 12px;
+  border: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 8px;
+  background: var(--color-background-primary, #fff);
+  color: var(--color-text-primary, #131313);
+  width: 100%;
+  box-sizing: border-box;
+}
+form.elicit .elicit-other[hidden] {
+  display: none;
+}
+form.elicit .elicit-textarea {
+  min-height: 84px;
+  padding: 12px;
+  border: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 8px;
+  background: var(--color-background-primary, #fff);
+  color: var(--color-text-primary, #131313);
+  resize: vertical;
+  box-sizing: border-box;
+  width: 100%;
+}
+form.elicit .elicit-textarea::placeholder {
+  color: var(--color-text-tertiary, #7b7974);
+}
+form.elicit .elicit-date {
+  padding: 12px 16px;
+  border: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-text-primary, #131313);
+  width: fit-content;
+  cursor: pointer;
+}
+form.elicit .elicit-other:focus,
+form.elicit .elicit-textarea:focus,
+form.elicit .elicit-date:focus {
+  outline: none;
+  border-color: var(--color-border-info, #2a78d6);
+  box-shadow: 0 0 0 3px var(--color-background-info, rgba(42, 120, 214, 0.2));
+}
+form.elicit .elicit-files {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 12px;
+}
+form.elicit .elicit-dropzone {
+  width: 120px;
+  height: 120px;
+  border: 1px dashed var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+  border-radius: 10px;
+  box-shadow: var(--elicit-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  background: color-mix(
+    in srgb,
+    var(--color-text-primary, #131313) 2%,
+    var(--color-background-primary, #fff)
+  );
+  color: var(--color-text-tertiary, #7b7974);
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+form.elicit .elicit-dropzone:hover {
+  border-color: var(--color-text-info, #184f95);
+  background: color-mix(
+    in srgb,
+    var(--color-text-info, #184f95) 4%,
+    transparent
+  );
+}
+form.elicit .elicit-dropzone svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+form.elicit .elicit-dropzone input[type="file"] {
+  display: none;
+}
+form.elicit .elicit-file-tile {
+  width: 120px;
+  height: 120px;
+  border: 0.5px solid var(--elicit-border-faint);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--color-background-primary, #fff);
+  box-shadow: var(--elicit-shadow-sm);
+  box-sizing: border-box;
+  position: relative;
+}
+form.elicit .elicit-file-tile .name {
+  font-size: 12px;
+  color: var(--color-text-primary, #131313);
+  word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+form.elicit .elicit-file-tile .badge {
+  align-self: flex-start;
+  height: 18px;
+  padding: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  border: 0.5px solid var(--elicit-border-faint);
+  border-radius: 4px;
+  background: color-mix(
+    in srgb,
+    var(--color-background-primary, #fff) 70%,
+    transparent
+  );
+  box-shadow: var(--elicit-shadow-sm);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--color-text-tertiary, #7b7974);
+  text-transform: uppercase;
+}
+form.elicit .elicit-file-tile .remove {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0.5px solid var(--elicit-border-faint);
+  border-radius: 9999px;
+  background: color-mix(
+    in srgb,
+    var(--color-background-primary, #fff) 90%,
+    transparent
+  );
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-tertiary, #7b7974);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    color 120ms ease,
+    background-color 120ms ease;
+}
+form.elicit .elicit-file-tile .remove:hover {
+  color: var(--color-text-secondary, #383835);
+  background: color-mix(
+    in srgb,
+    var(--color-background-primary, #fff) 50%,
+    transparent
+  );
+}
+form.elicit .elicit-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  height: 68px;
+  padding: 0 24px;
+  border-top: 0.5px solid var(--color-border-tertiary, rgba(31, 30, 29, 0.15));
+}
+form.elicit .elicit-skip,
+form.elicit .elicit-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  min-width: 80px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color 100ms ease-out,
+    border-color 100ms ease-out,
+    transform 150ms cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+form.elicit .elicit-skip:active,
+form.elicit .elicit-submit:active {
+  transform: scale(0.96);
+}
+form.elicit .elicit-skip {
+  border: 0.5px solid
+    color-mix(
+      in srgb,
+      var(--color-border-secondary, rgba(30, 30, 29, 0.3)) 30%,
+      transparent
+    );
+  background: transparent;
+  color: var(--color-text-primary, #131313);
+}
+form.elicit .elicit-skip:hover {
+  background: var(--color-background-secondary, #f9f9f7);
+  border-color: transparent;
+}
+form.elicit .elicit-submit {
+  border: none;
+  background: var(--color-text-primary, #131313);
+  color: var(--color-background-primary, #fff);
+}
+form.elicit .elicit-submit:hover {
+  transform: scaleX(1.005) scaleY(1.015);
+}
+form.elicit .elicit-submit:hover:active {
+  transform: scale(0.96);
+}
+form.elicit .elicit-body {
+  transition: opacity 150ms ease-out;
+}
+form.elicit.elicit-transitioning .elicit-body {
+  opacity: 0;
+}
+form.elicit.elicit-submitted {
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: none;
+  padding: 16px;
+  margin: 4px;
+}
+form.elicit .elicit-header,
+form.elicit .elicit-footer {
+  transition:
+    opacity 200ms ease-out,
+    height 200ms ease-out,
+    padding 200ms ease-out,
+    border-width 200ms ease-out,
+    visibility 0s linear 200ms;
+}
+form.elicit.elicit-submitted .elicit-header,
+form.elicit.elicit-submitted .elicit-footer {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-width: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+form.elicit.elicit-submitted .elicit-body {
+  padding: 0;
+}
+form.elicit.elicit-submitted .elicit-body:not(:has(.elicit-summary)) {
+  pointer-events: none;
+  opacity: 0.5;
+}
+form.elicit.elicit-restored,
+form.elicit.elicit-restored .elicit-body,
+form.elicit.elicit-restored .elicit-header,
+form.elicit.elicit-restored .elicit-footer {
+  transition: none;
+}
+form.elicit .elicit-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+form.elicit .elicit-summary-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+form.elicit .elicit-summary-q {
+  font-family: var(--font-serif, "Anthropic Serif", Georgia, serif);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text-secondary, #383835);
+}
+form.elicit .elicit-summary-a {
+  font-weight: 430;
+  color: var(--color-text-tertiary, #7b7974);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-primary);
+}
+.leader {
+  stroke: var(--t);
+  stroke-width: 0.5;
+  stroke-dasharray: 4 3;
+  fill: none;
+}
+g.c-purple > rect,
+g.c-purple > ellipse,
+g.c-purple > circle,
+g.c-purple > polygon,
+rect.c-purple,
+ellipse.c-purple,
+circle.c-purple,
+polygon.c-purple {
+  fill: light-dark(#eeedfe, #3c3489);
+  stroke: light-dark(#534ab7, #afa9ec);
+}
+.c-purple > .th,
+.c-purple > .t {
+  fill: light-dark(#3c3489, #cecbf6);
+}
+.c-purple > .ts {
+  fill: light-dark(#534ab7, #afa9ec);
+}
+g.c-teal > rect,
+g.c-teal > ellipse,
+g.c-teal > circle,
+g.c-teal > polygon,
+rect.c-teal,
+ellipse.c-teal,
+circle.c-teal,
+polygon.c-teal {
+  fill: light-dark(#e1f5ee, #085041);
+  stroke: light-dark(#0f6e56, #5dcaa5);
+}
+.c-teal > .th,
+.c-teal > .t {
+  fill: light-dark(#085041, #9fe1cb);
+}
+.c-teal > .ts {
+  fill: light-dark(#0f6e56, #5dcaa5);
+}
+g.c-coral > rect,
+g.c-coral > ellipse,
+g.c-coral > circle,
+g.c-coral > polygon,
+rect.c-coral,
+ellipse.c-coral,
+circle.c-coral,
+polygon.c-coral {
+  fill: light-dark(#faece7, #712b13);
+  stroke: light-dark(#993c1d, #f0997b);
+}
+.c-coral > .th,
+.c-coral > .t {
+  fill: light-dark(#712b13, #f5c4b3);
+}
+.c-coral > .ts {
+  fill: light-dark(#993c1d, #f0997b);
+}
+g.c-pink > rect,
+g.c-pink > ellipse,
+g.c-pink > circle,
+g.c-pink > polygon,
+rect.c-pink,
+ellipse.c-pink,
+circle.c-pink,
+polygon.c-pink {
+  fill: light-dark(#fbeaf0, #72243e);
+  stroke: light-dark(#993556, #ed93b1);
+}
+.c-pink > .th,
+.c-pink > .t {
+  fill: light-dark(#72243e, #f4c0d1);
+}
+.c-pink > .ts {
+  fill: light-dark(#993556, #ed93b1);
+}
+g.c-gray > rect,
+g.c-gray > ellipse,
+g.c-gray > circle,
+g.c-gray > polygon,
+rect.c-gray,
+ellipse.c-gray,
+circle.c-gray,
+polygon.c-gray {
+  fill: light-dark(#f1efe8, #444441);
+  stroke: light-dark(#5f5e5a, #b4b2a9);
+}
+.c-gray > .th,
+.c-gray > .t {
+  fill: light-dark(#444441, #d3d1c7);
+}
+.c-gray > .ts {
+  fill: light-dark(#5f5e5a, #b4b2a9);
+}
+g.c-blue > rect,
+g.c-blue > ellipse,
+g.c-blue > circle,
+g.c-blue > polygon,
+rect.c-blue,
+ellipse.c-blue,
+circle.c-blue,
+polygon.c-blue {
+  fill: light-dark(#e6f1fb, #0c447c);
+  stroke: light-dark(#185fa5, #85b7eb);
+}
+.c-blue > .th,
+.c-blue > .t {
+  fill: light-dark(#0c447c, #b5d4f4);
+}
+.c-blue > .ts {
+  fill: light-dark(#185fa5, #85b7eb);
+}
+g.c-green > rect,
+g.c-green > ellipse,
+g.c-green > circle,
+g.c-green > polygon,
+rect.c-green,
+ellipse.c-green,
+circle.c-green,
+polygon.c-green {
+  fill: light-dark(#eaf3de, #27500a);
+  stroke: light-dark(#3b6d11, #97c459);
+}
+.c-green > .th,
+.c-green > .t {
+  fill: light-dark(#27500a, #c0dd97);
+}
+.c-green > .ts {
+  fill: light-dark(#3b6d11, #97c459);
+}
+g.c-amber > rect,
+g.c-amber > ellipse,
+g.c-amber > circle,
+g.c-amber > polygon,
+rect.c-amber,
+ellipse.c-amber,
+circle.c-amber,
+polygon.c-amber {
+  fill: light-dark(#faeeda, #633806);
+  stroke: light-dark(#854f0b, #ef9f27);
+}
+.c-amber > .th,
+.c-amber > .t {
+  fill: light-dark(#633806, #fac775);
+}
+.c-amber > .ts {
+  fill: light-dark(#854f0b, #ef9f27);
+}
+g.c-red > rect,
+g.c-red > ellipse,
+g.c-red > circle,
+g.c-red > polygon,
+rect.c-red,
+ellipse.c-red,
+circle.c-red,
+polygon.c-red {
+  fill: light-dark(#fcebeb, #791f1f);
+  stroke: light-dark(#a32d2d, #f09595);
+}
+.c-red > .th,
+.c-red > .t {
+  fill: light-dark(#791f1f, #f7c1c1);
+}
+.c-red > .ts {
+  fill: light-dark(#a32d2d, #f09595);
+}
+svg.classDiagram,
+svg.erDiagram {
+  font-size: 13px;
+  max-width: 100%;
+  height: auto;
+}
+svg.classDiagram foreignObject,
+svg.erDiagram foreignObject {
+  overflow: visible;
+}
+svg.classDiagram foreignObject > div,
+svg.erDiagram foreignObject > div {
+  max-width: none !important;
+}
+svg.classDiagram .nodeLabel,
+svg.erDiagram .nodeLabel,
+svg.classDiagram .label foreignObject div,
+svg.erDiagram .label foreignObject div {
+  font-family: var(--font-sans) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: var(--color-text-secondary) !important;
+}
+svg.classDiagram .label-group .nodeLabel,
+svg.erDiagram .name .nodeLabel {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: var(--color-text-primary) !important;
+}
+svg.classDiagram .label-group .label {
+  font-weight: 500 !important;
+}
+svg.classDiagram .edgeLabel,
+svg.classDiagram .edgeLabel span,
+svg.classDiagram .edgeTerminals foreignObject div,
+svg.erDiagram .edgeLabel,
+svg.erDiagram .edgeLabel span {
+  font-size: 11px !important;
+  color: var(--color-text-tertiary) !important;
+}
+svg.classDiagram .node path[stroke]:not([stroke="none"]),
+svg.classDiagram .divider path,
+svg.erDiagram .node path[stroke]:not([stroke="none"]),
+svg.erDiagram .divider path {
+  stroke: var(--color-border-tertiary) !important;
+  stroke-width: 0.5px !important;
+  fill: none !important;
+}
+svg.classDiagram .node .basic path[fill]:not([fill="none"]) {
+  fill: var(--color-background-primary) !important;
+  stroke: none !important;
+  stroke-width: 0 !important;
+}
+svg.erDiagram .node > g:first-child > path[fill]:not([fill="none"]) {
+  fill: var(--color-background-secondary) !important;
+}
+svg.erDiagram .row-rect-odd path[fill]:not([fill="none"]) {
+  fill: var(--color-background-primary) !important;
+}
+svg.erDiagram .row-rect-even path[fill]:not([fill="none"]) {
+  fill: var(--color-background-secondary) !important;
+}
+svg.erDiagram .relationshipLine,
+svg.classDiagram .relation {
+  stroke: var(--color-text-tertiary) !important;
+  stroke-width: 1px !important;
+}
+svg.classDiagram .marker,
+svg.classDiagram marker path,
+svg.erDiagram .marker,
+svg.erDiagram marker path {
+  stroke: var(--color-text-tertiary) !important;
+  stroke-width: 1px !important;
+}
+svg.classDiagram marker path[fill]:not([fill="none"]):not([fill="transparent"]),
+svg.erDiagram marker path[fill]:not([fill="none"]):not([fill="transparent"]) {
+  fill: var(--color-text-tertiary) !important;
+}
+svg.classDiagram .labelBkg,
+svg.erDiagram .labelBkg {
+  background-color: var(--color-background-primary) !important;
+  opacity: 1 !important;
+}
+body {
+  position: relative;
+}
+#vis-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#vis-container > svg {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+#action-btns {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2147483647;
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+#action-btns[hidden] {
+  display: none;
+}
+body:hover #action-btns {
+  opacity: 1;
+}
+@media (hover: none) and (pointer: coarse) {
+  #action-btns {
+    display: none;
+  }
+}
+#action-btns > button {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm, 6px);
+  background: var(--bg-100, light-dark(#faf9f5, #262624));
+  border: 1px solid transparent;
+  color: var(--color-text-secondary, #3d3d3a);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+#action-btns > button:hover {
+  background: var(--bg-300, light-dark(#f0eee6, #141413));
+}
+#more-popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 8rem;
+  padding: 6px;
+  border-radius: 12px;
+  background: var(--color-background-primary, #fff);
+  border: 0.5px solid var(--color-border-secondary, rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 2px 8px light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.24));
+  font-family: var(--font-sans, system-ui);
+  color: var(--color-text-secondary, #3d3d3a);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0s linear 0.15s;
+}
+#more-btn:hover ~ #more-popover,
+#more-popover:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0s;
+}
+.more-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-sans, system-ui) !important;
+  color: inherit;
+  transition: background 0.1s ease;
+  white-space: nowrap;
+}
+.more-item:hover {
+  background: var(--color-background-secondary, #f5f4ed);
+  color: var(--color-text-primary, #141413);
+}
+.more-item-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more-item-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.more-item-label {
+  font-family: var(--font-sans, system-ui) !important;
+  font-size: 14px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+#copy-toast {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: var(--color-background-danger, #f7ecec);
+  color: var(--color-text-danger, #7f2c28);
+  border: 1px solid var(--color-border-danger, #a73d39);
+  font-family: var(--font-sans, system-ui);
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: var(--border-radius-md, 8px);
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  z-index: 2147483647;
+  white-space: nowrap;
+}
+#copy-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+#vis-container.scripts-loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+#vis-container.scripts-loading::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10000;
+  overflow: hidden;
+}
+#vis-container.scripts-loading::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 60%;
+  height: 200%;
+  z-index: 10001;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.08)) 50%,
+    transparent 100%
+  );
+  animation: scriptsShimmer 2s ease-in-out infinite;
+}
+@keyframes scriptsShimmer {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(200%) rotate(25deg);
+  }
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes svgFadeInScale {
+  from {
+    opacity: 0;
+    scale: 0.95;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+#vis-container.streaming
+  :where(
+    svg,
+    circle,
+    rect,
+    path,
+    polygon,
+    polyline,
+    line,
+    ellipse,
+    g,
+    text
+  ):not([transform]):not([opacity]) {
+  transition:
+    fill 0.4s ease-out,
+    stroke 0.4s ease-out,
+    opacity 0.4s ease-out;
+  animation: svgFadeInScale 0.5s ease-out;
+  transform-origin: center;
+}
+.pcard{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px;transition:border-color 0.15s;}
+.pcard:hover{border-color:var(--color-border-secondary);}
+.couple-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:14px 18px;grid-column:span 2;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.badge{display:inline-block;font-size:11px;padding:2px 9px;border-radius:100px;}
+.bar-track{height:4px;background:var(--color-border-tertiary);border-radius:2px;margin-top:10px;}
+.bar-fill{height:4px;border-radius:2px;transition:width 0.25s ease;}
+.remove-btn{background:none;border:none;padding:0;margin:0;font-size:16px;line-height:1;color:var(--color-text-tertiary);cursor:pointer;flex-shrink:0;width:20px;text-align:center;}
+.remove-btn:hover{color:var(--color-text-danger);}
+.add-row{display:flex;gap:8px;margin-bottom:10px;align-items:center;}
